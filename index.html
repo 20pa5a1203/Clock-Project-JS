@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock's</title>
+    <link rel = "icon" href ="./clock.svg" type = "image/x-icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- CSS only -->
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="body">
+        <div class="jsc" id="def">
+          <div class="clock-logo">
+          <i class="bi bi-clock" ></i>
+          </div>
+          <p class="credit" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+        </div>
+      <!-- india-time -->
+      <div   class="clock jsc" id="india">
+        <div id="india1" onclick="india()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- london-time -->
+      <div  class="clock jsc" id="London">
+        <div id="london1" onclick="london()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- new-york time -->
+      <div  class="clock jsc"  id="New-York">
+          <div id="newyork1" onclick="newyork()"></div>
+          <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- canada - time -->
+      <div  class="clock jsc"  id="Canada"> 
+        <div id="canada1" onclick="canada()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- dhaka - time -->
+      <div  class="clock jsc"  id="Dhaka">
+        <div id="dhaka1" onclick="dhaka()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- sri-lanka_time -->
+      <div  class="clock jsc"  id="Sri-Lanka">
+        <div id="srilanka1" onclick="srilanka()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- germany -->
+      <div  class="clock jsc"  id="Germany">
+        <div id="germany1" onclick="germany()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- mexico -->
+      <div  class="clock jsc"  id="Mexico">
+        <div id="mexico1" onclick="mexico()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- pakistan-time -->
+      <div  class="clock jsc"  id="Pakistan">
+        <div id="pakistan1" onclick="pakistan()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- tokyo -->
+      <div  class="clock jsc"  id="Tokyo">
+        <div id="tokyo1" onclick="tokyo()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- hongkong-time -->
+      <div  class="clock jsc"  id="Hong-kong">
+        <div id="hongkong1" onclick="hongkong()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- france-time -->
+      <div  class="clock jsc"  id="France">
+        <div id="france1" onclick="france()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- new-zealand time -->
+      <div  class="clock jsc"  id="New-Zealand">
+        <div id="newzealand1" onclick="newzealand()"></div>
+        <p class="credits" >Made With <i class="bi bi-heart-fill" style="color: red;"></i> By Pydi</p>
+      </div>
+      <!-- side-bar -->
+      <button class="sidebar-home">
+        <i class="fas fa-home" href="./index.html" ></i>
+      </button>
+    <button class="sidebar-toggle">
+      <i class="bi bi-arrow-right-square"></i>
+    </button>
+  
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <!-- <img src="./logo.png" class="logo" alt="" /> -->
+        <p><i class="bi bi-globe2"></i>   select a country</p>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <!-- links -->
+      <ul class="links">
+        <li class="linkbtn" onclick="showTime(event,'def')" id="default" ></li>
+         <li>
+          <a  class="linkbtn" onclick="showTime(event,'india')">India </a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'London')">London</a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'New-York')">New-York</a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'Canada')">Canada</a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'Dhaka')">Dhaka</a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'Sri-Lanka')">Sri-Lanka</a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'Germany')">Germany</a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'Mexico')">Mexico</a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'Pakistan')">Pakistan</a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'Tokyo')">Tokyo</a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'Hong-kong')">Hong-kong</a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'France')">France</a>
+        </li>
+        <li>
+          <a  class="linkbtn" onclick="showTime(event,'New-Zealand')">New Zealand</a>
+        </li>        
+      </ul>
+      <!-- social media -->
+      <ul class="social-icons">
+        <li>
+          <a href="mailto:jogipydidurgarao412001@gmail.com" target="_blank">
+            <i class="bi bi-google"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jogipydidurgarao/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/20pa5a1203" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/JogiPydi" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://m.facebook.com/100031219776644/" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+      <!-- JavaScript Bundle with Popper -->
+  </body>
+</html>
